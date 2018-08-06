@@ -8,4 +8,4 @@ express+mongodb 搭建一个基础豆瓣电影资源查看
   1.了解mongodb数据库及模型创建
   2.认识 grunt,bower 管理工具
   3.认识和了解后台开发基础逻辑
-  4.认识单元测试
+  4.认识单元测试 mocha
