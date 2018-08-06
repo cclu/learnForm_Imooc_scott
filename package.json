@@ -1,0 +1,42 @@
+{
+  "name": "imooc",
+  "version": "1.0.0",
+  "description": "imooc movie",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "connect-mongo": "^2.0.1",
+    "connect-multiparty": "^2.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-mocha-test": "^0.13.3",
+    "jade": "^1.11.0",
+    "mocha-test": "^2.0.4",
+    "moment": "^2.22.1",
+    "mongoose": "^5.1.1",
+    "morgan": "^1.9.0",
+    "serve-static": "^1.13.2",
+    "should": "^13.2.1",
+    "underscore": "^1.9.0"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-nodemon": "^0.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "imooc",
+    "movie"
+  ],
+  "author": "cclu",
+  "license": "ISC"
+}

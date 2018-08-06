@@ -1,0 +1,61 @@
+.container.mb20
+
+  .page-header
+    h1 #{title}
+    .row.clearfix
+      .col-md-4
+        small 重度小众迷
+      .col-md-8
+        form(method="GET", action="/results")
+          .input-group.col-sm-4.pull-right
+            input.form-control(type="text", name='q')
+            span.input-group-btn
+              button.btn.btn-primary(type="submit") 搜索
+nav.navbar.navbar-light.navbar-expand-sm.bg-light.fixed-bottom
+  .container
+    .navbar-header.mr-auto
+      a.navbar-brand(href="/") 小众电影迷
+    if user
+      div.navbar-text
+        span 欢迎您，#{user.name}
+        span &nbsp;|&nbsp;
+        a.nav-item(href="/logout") 退出
+    else
+      div.navbar-text
+        a.nav-item(href="/register") 注册
+        span &nbsp;|&nbsp;
+        a.nav-item( href="/login") 登录
+//- #signInModal.modal.fade
+//-   .modal-dialog
+//-     .modal-content
+//-       form(action="/user/signup", method="post")
+//-         .modal-header 注册
+//-         .modal-body 
+//-           .form-group.row
+//-             label.col-sm-2.col-form-label(for="singUpName") 用户名
+//-             div.col-sm-10
+//-               input#singUpName.form-control(name="user[name]", type="text")
+//-           .form-group.row
+//-             label.col-sm-2.col-form-label(for="singUpPassword") 密码
+//-             div.col-sm-10
+//-               input#singUpPassword.form-control(name="user[password]", type="password")
+//-         .modal-footer
+//-           button.btn.btn-outline-secondary(type="button", data-dismiss="modal") 关闭
+//-           button.btn.btn-success(type="submit") 提交
+//- #signUpModal.modal.fade
+//-   .modal-dialog
+//-     .modal-content
+//-       form(action="/user/signin", method="post")
+//-         .modal-header 登录
+//-         .modal-body 
+//-           .form-group.row
+//-             label.col-sm-2.col-form-label(for="singInName") 用户名
+//-             div.col-sm-10
+//-               input#singInName.form-control(name="user[name]", type="text")
+//-           .form-group.row
+//-             label.col-sm-2.col-form-label(for="singInPassword") 密码
+//-             div.col-sm-10  
+//-               input#singInPassword.form-control(name="user[password]", type="password")
+//-         .modal-footer
+//-           button.btn.btn-outline-secondary(type="button", data-dismiss="modal") 关闭
+//-           button.btn.btn-success(type="submit") 提交

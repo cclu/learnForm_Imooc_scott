@@ -1,0 +1,14 @@
+a {outline: none}
+.mb20 {
+  margin-bottom: 20px;
+}
+.pb50{
+  padding-bottom: 50px;
+}
+.commentBtn {
+  overflow: hidden;
+  display: inline-block;
+}
+.main-body {
+  padding-bottom: 68px;
+}
